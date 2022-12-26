@@ -1,0 +1,77 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+log4j:WARN No appenders could be found for logger (io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+SLF4J: A number (1) of logging calls during the initialization phase have been intercepted and are
+SLF4J: now being replayed. These are subject to the filtering rules of the underlying logging system.
+SLF4J: See also http://www.slf4j.org/codes.html#replay
+{"logLevel":"debug","message":"gauge-java took 3787milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 3787"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 60740"}
+{"logLevel":"info","message":"Listening on port:60740"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.BookingPage.fromAirport' and 'com.testinium.page.BookingPage.fromAirport'"}
+{"logLevel":"debug","message":"Found Kalkış yeri {} seçilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.BookingPage.oneWay' and 'com.testinium.page.BookingPage.oneWay'"}
+{"logLevel":"debug","message":"Found Tek yön seçilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.BookingPage.selectDate' and 'com.testinium.page.BookingPage.selectDate'"}
+{"logLevel":"debug","message":"Found Gün seçilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.SelectFlightPage.economyClass' and 'com.testinium.page.SelectFlightPage.economyClass'"}
+{"logLevel":"debug","message":"Found Ekomomi Sınıfı seçilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.HomePage.clickBook' and 'com.testinium.page.HomePage.clickBook'"}
+{"logLevel":"debug","message":"Found Book'a tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.HomePage.waitForSecods' and 'com.testinium.page.HomePage.waitForSecods'"}
+{"logLevel":"debug","message":"Found {} saniye kadar bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.BookingPage.toAirport' and 'com.testinium.page.BookingPage.toAirport'"}
+{"logLevel":"debug","message":"Found Varış yeri {} seçilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.SelectFlightPage.selectFlight' and 'com.testinium.page.SelectFlightPage.selectFlight'"}
+{"logLevel":"debug","message":"Found Rastgele uçuş  seçilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.BookingPage.searchFlight' and 'com.testinium.page.BookingPage.searchFlight'"}
+{"logLevel":"debug","message":"Found Uçuş aranır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.HomePage.skip' and 'com.testinium.page.HomePage.skip'"}
+{"logLevel":"debug","message":"Found skip yap in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tTek yön seçilir : public void oneWay()"}
+{"logLevel":"debug","message":"\tKalkış yeri {} seçilir : public void fromAirport(String from)"}
+{"logLevel":"debug","message":"\tRastgele uçuş  seçilir : public void selectFlight()"}
+{"logLevel":"debug","message":"\tVarış yeri {} seçilir : public void toAirport(String to)"}
+{"logLevel":"debug","message":"\tUçuş aranır : public void searchFlight()"}
+{"logLevel":"debug","message":"\t{} saniye kadar bekle : public void waitForSecods(ınt x) throws InterruptedException"}
+{"logLevel":"debug","message":"\tBook'a tıkla : public void clickBook()"}
+{"logLevel":"debug","message":"\tGün seçilir : public void selectDate()"}
+{"logLevel":"debug","message":"\tskip yap : public void skip()"}
+{"logLevel":"debug","message":"\tEkomomi Sınıfı seçilir : public void economyClass()"}
+Ara 26, 2022 7:30:05 ÖS io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing '{} saniye kadar bekle' using 'class com.testinium.page.HomePage.waitForSecods"}
+{"logLevel":"debug","message":"Executing 'skip yap' using 'class com.testinium.page.HomePage.skip"}
+2022-12-26 19:30:14,810 +03:00 INFO  c.t.p.HomePage:34 skip - Ana sayfa acildi
+{"logLevel":"debug","message":"Executing '{} saniye kadar bekle' using 'class com.testinium.page.HomePage.waitForSecods"}
+{"logLevel":"debug","message":"Executing 'Book'a tıkla' using 'class com.testinium.page.HomePage.clickBook"}
+2022-12-26 19:30:17,763 +03:00 INFO  c.t.p.HomePage:45 clickBook - Book tiklandi
+{"logLevel":"debug","message":"Executing '{} saniye kadar bekle' using 'class com.testinium.page.HomePage.waitForSecods"}
+{"logLevel":"debug","message":"Executing 'Tek yön seçilir' using 'class com.testinium.page.BookingPage.oneWay"}
+2022-12-26 19:30:21,107 +03:00 INFO  c.t.p.HomePage:18 oneWay - Tek yon secildi
+{"logLevel":"debug","message":"Executing 'Kalkış yeri {} seçilir' using 'class com.testinium.page.BookingPage.fromAirport"}
+2022-12-26 19:30:27,305 +03:00 INFO  c.t.p.HomePage:30 fromAirport - Kalkis yeri Berlin secildi
+{"logLevel":"debug","message":"Executing 'Varış yeri {} seçilir' using 'class com.testinium.page.BookingPage.toAirport"}
+2022-12-26 19:30:33,010 +03:00 INFO  c.t.p.HomePage:43 toAirport - Varis yeri Istanbul secildi
+{"logLevel":"debug","message":"Executing 'Gün seçilir' using 'class com.testinium.page.BookingPage.selectDate"}
+2022-12-26 19:30:37,526 +03:00 INFO  c.t.p.HomePage:72 selectDate - Gun secildi
+{"logLevel":"debug","message":"Executing '{} saniye kadar bekle' using 'class com.testinium.page.HomePage.waitForSecods"}
+{"logLevel":"debug","message":"Executing 'Uçuş aranır' using 'class com.testinium.page.BookingPage.searchFlight"}
+2022-12-26 19:30:39,631 +03:00 INFO  c.t.p.HomePage:78 searchFlight - Ucus arandi
+{"logLevel":"debug","message":"Executing '{} saniye kadar bekle' using 'class com.testinium.page.HomePage.waitForSecods"}
+{"logLevel":"debug","message":"Executing 'Rastgele uçuş  seçilir' using 'class com.testinium.page.SelectFlightPage.selectFlight"}
+2022-12-26 19:30:42,676 +03:00 INFO  c.t.p.SelectFlightPage:20 selectFlight - Rastgele ucus secildi
+[[[io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=com.m.qr.home.onboarding.ui.OnBoardingActivity, appPackage=com.m.qr, databaseEnabled=false, desired={platformName=android, appActivity=com.m.qr.home.onboarding.ui.OnBoardingActivity, appPackage=com.m.qr, deviceName=emulator-5554, newCommandTimeout=3000}, deviceApiLevel=27, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenDensity=560, deviceScreenSize=1440x3040, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=3000, pixelRatio=3.5, platform=LINUX, platformName=Android, platformVersion=8.1.0, statBarHeight=84, takesScreenshot=true, viewportRect={left=0, top=84, width=1440, height=2788}, warnings={}, webStorageEnabled=false}] -> xpath: //*[@class='android.view.ViewGroup' and @resource-id='com.m.qr:id/rvmp_item_search_result_root_view']], [[io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=com.m.qr.home.onboarding.ui.OnBoardingActivity, appPackage=com.m.qr, databaseEnabled=false, desired={platformName=android, appActivity=com.m.qr.home.onboarding.ui.OnBoardingActivity, appPackage=com.m.qr, deviceName=emulator-5554, newCommandTimeout=3000}, deviceApiLevel=27, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenDensity=560, deviceScreenSize=1440x3040, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=3000, pixelRatio=3.5, platform=LINUX, platformName=Android, platformVersion=8.1.0, statBarHeight=84, takesScreenshot=true, viewportRect={left=0, top=84, width=1440, height=2788}, warnings={}, webStorageEnabled=false}] -> xpath: //*[@class='android.view.ViewGroup' and @resource-id='com.m.qr:id/rvmp_item_search_result_root_view']], [[io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=com.m.qr.home.onboarding.ui.OnBoardingActivity, appPackage=com.m.qr, databaseEnabled=false, desired={platformName=android, appActivity=com.m.qr.home.onboarding.ui.OnBoardingActivity, appPackage=com.m.qr, deviceName=emulator-5554, newCommandTimeout=3000}, deviceApiLevel=27, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenDensity=560, deviceScreenSize=1440x3040, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=3000, pixelRatio=3.5, platform=LINUX, platformName=Android, platformVersion=8.1.0, statBarHeight=84, takesScreenshot=true, viewportRect={left=0, top=84, width=1440, height=2788}, warnings={}, webStorageEnabled=false}] -> xpath: //*[@class='android.view.ViewGroup' and @resource-id='com.m.qr:id/rvmp_item_search_result_root_view']], [[io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=com.m.qr.home.onboarding.ui.OnBoardingActivity, appPackage=com.m.qr, databaseEnabled=false, desired={platformName=android, appActivity=com.m.qr.home.onboarding.ui.OnBoardingActivity, appPackage=com.m.qr, deviceName=emulator-5554, newCommandTimeout=3000}, deviceApiLevel=27, deviceManufacturer=Google, deviceModel=Android SDK built for x86, deviceName=emulator-5554, deviceScreenDensity=560, deviceScreenSize=1440x3040, deviceUDID=emulator-5554, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=3000, pixelRatio=3.5, platform=LINUX, platformName=Android, platformVersion=8.1.0, statBarHeight=84, takesScreenshot=true, viewportRect={left=0, top=84, width=1440, height=2788}, warnings={}, webStorageEnabled=false}] -> xpath: //*[@class='android.view.ViewGroup' and @resource-id='com.m.qr:id/rvmp_item_search_result_root_view']]]
+{"logLevel":"debug","message":"Executing 'Ekomomi Sınıfı seçilir' using 'class com.testinium.page.SelectFlightPage.economyClass"}
+2022-12-26 19:30:44,632 +03:00 INFO  c.t.p.SelectFlightPage:27 economyClass - Ekonomi sinifi secildi
+{"logLevel":"debug","message":"Executing '{} saniye kadar bekle' using 'class com.testinium.page.HomePage.waitForSecods"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

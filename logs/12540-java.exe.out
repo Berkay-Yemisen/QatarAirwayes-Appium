@@ -1,0 +1,54 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+log4j:WARN No appenders could be found for logger (io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+SLF4J: A number (9) of logging calls during the initialization phase have been intercepted and are
+SLF4J: now being replayed. These are subject to the filtering rules of the underlying logging system.
+SLF4J: See also http://www.slf4j.org/codes.html#replay
+{"logLevel":"debug","message":"gauge-java took 3590milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 3590"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 59050"}
+{"logLevel":"info","message":"Listening on port:59050"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.BookingPage.fromAirport' and 'com.testinium.page.BookingPage.fromAirport'"}
+{"logLevel":"debug","message":"Found Kalkış yeri {} seçilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.BookingPage.oneWay' and 'com.testinium.page.BookingPage.oneWay'"}
+{"logLevel":"debug","message":"Found Tek yön seçilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.BookingPage.selectDate' and 'com.testinium.page.BookingPage.selectDate'"}
+{"logLevel":"debug","message":"Found Gün seçilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.SelectFlightPage.economyClass' and 'com.testinium.page.SelectFlightPage.economyClass'"}
+{"logLevel":"debug","message":"Found Ekomomi Sınıfı seçilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.HomePage.clickBook' and 'com.testinium.page.HomePage.clickBook'"}
+{"logLevel":"debug","message":"Found Book'a tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.HomePage.waitForSecods' and 'com.testinium.page.HomePage.waitForSecods'"}
+{"logLevel":"debug","message":"Found {} saniye kadar bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.BookingPage.toAirport' and 'com.testinium.page.BookingPage.toAirport'"}
+{"logLevel":"debug","message":"Found Varış yeri {} seçilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.SelectFlightPage.selectFlight' and 'com.testinium.page.SelectFlightPage.selectFlight'"}
+{"logLevel":"debug","message":"Found Rastgele uçuş  seçilir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.BookingPage.searchFlight' and 'com.testinium.page.BookingPage.searchFlight'"}
+{"logLevel":"debug","message":"Found Uçuş aranır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.testinium.page.HomePage.skip' and 'com.testinium.page.HomePage.skip'"}
+{"logLevel":"debug","message":"Found skip yap in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tTek yön seçilir : public void oneWay()"}
+{"logLevel":"debug","message":"\tKalkış yeri {} seçilir : public void fromAirport(String from)"}
+{"logLevel":"debug","message":"\tRastgele uçuş  seçilir : public void selectFlight()"}
+{"logLevel":"debug","message":"\tVarış yeri {} seçilir : public void toAirport(String to)"}
+{"logLevel":"debug","message":"\tUçuş aranır : public void searchFlight()"}
+{"logLevel":"debug","message":"\t{} saniye kadar bekle : public void waitForSecods(ınt x) throws InterruptedException"}
+{"logLevel":"debug","message":"\tBook'a tıkla : public void clickBook()"}
+{"logLevel":"debug","message":"\tGün seçilir : public void selectDate()"}
+{"logLevel":"debug","message":"\tskip yap : public void skip()"}
+{"logLevel":"debug","message":"\tEkomomi Sınıfı seçilir : public void economyClass()"}
+Ara 26, 2022 4:34:40 ÖS io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing '{} saniye kadar bekle' using 'class com.testinium.page.HomePage.waitForSecods"}
+{"logLevel":"debug","message":"Executing 'skip yap' using 'class com.testinium.page.HomePage.skip"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}
