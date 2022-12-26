@@ -2,7 +2,6 @@ package com.testinium.page;
 
 import com.testinium.driver.BaseTest;
 import com.thoughtworks.gauge.Step;
-import io.appium.java_client.MobileElement;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -52,18 +51,6 @@ public class BookingPage extends BaseTest {
             e.printStackTrace();
         }
         appiumDriver.findElement(By.id("com.m.qr:id/rvmp_fragment_rtow_flight_selection_date_holder_date_text_view")).click();
-        /*try {
-            Thread.sleep(2 * 1000);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-
-        appiumDriver.findElement(By.xpath("//*[@text='2' and @clickable='true']")).click();
-
-
-         */
-        //MobileElement element = appiumDriver.findElement(By.id("com.m.qr:id/drawer_root"));
         Actions action = new Actions(appiumDriver);
 
         for(int i = 0; i<9; i++){

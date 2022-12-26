@@ -43,6 +43,6 @@ public class BaseTest {
 
     @AfterScenario
     public void afterScenario() {
-        //appiumDriver.quit();
+        appiumDriver.quit();
     }
 }
